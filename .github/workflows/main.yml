@@ -18,9 +18,9 @@ jobs:
     - name: Kết nối ssh linux -> và pull
       uses: appleboy/ssh-action@master
       with:
-        host: ${{ secret.HOST }}
-        username: ${{ secret.USERNAME }}
-        password: ${{ secret.PW }}
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PW }}
         port: 22
         script: |
           cd /var/www/node/MVC_express_server
