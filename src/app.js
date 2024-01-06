@@ -7,9 +7,9 @@ const app = express();
 import bodyParser from 'body-parser';
 app.use(bodyParser.json());
 
-app.get('/test2', (req, res) => {
+app.get('/test', (req, res) => {
     return res.status(200).json({
-        message: "OK2!"
+        message: "Website OK!"
     })
 })
 
