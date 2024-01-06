@@ -8,9 +8,7 @@ import bodyParser from 'body-parser';
 app.use(bodyParser.json());
 
 app.get('/test', (req, res) => {
-    return res.status(200).json({
-        message: "Website OK!"
-    })
+    return res.status(200).send("Website OK!")
 })
 
 app.listen(process.env.PORT, () => {
